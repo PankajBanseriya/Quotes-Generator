@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quotes generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+<body>
+    <div class="main">
+        <header>Today Quotes!</header>
+        <div class="container">
+            <span class="quote-icon quote-icon-left">
+                <i class="fas fa-quote-left"></i>
+            </span>
+            <div class="quote">
+                <p class="quoteinner">Loading...</p>
+            </div>
+            <span class="quote-icon quote-icon-right">
+                <i class="fas fa-quote-right"></i>
+            </span>
+            <div class="author">
+                <p class="quote-author"></p>
+            </div>
+
+            <div class="btns">
+                <div class="use-btns">
+                    <button class="btn refresh-btn">
+                        New Quote
+                    </button>
+
+                </div>
+
+                <div class="send-btn">
+                    <button class="btn sound-btn">
+                        <i class="fa-solid fa-volume-high"></i>
+                    </button>
+                    <button class="btn copy-btn">
+                        <ion-icon name="copy-outline"></ion-icon>
+                    </button>
+                    <button class="btn tweet-btn">
+                        <i class="fa-brands fa-twitter"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js" async defer></script>
+</body>
+
+</html>

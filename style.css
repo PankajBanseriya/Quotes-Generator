@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #377dff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    background: #fff;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.523);
+    padding: 20px;
+    max-width: 450px;
+    min-width: 450px;
+    margin: 20px;
+}
+
+.main header {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.main .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .container .quote-icon {
+    font-size: 20px;
+}
+
+.main .container .quote-icon-left {
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+}
+
+.main .container .quote p {
+    text-align: center;
+    font-family: "Caveat", cursive;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.main .container .quote-icon-right {
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.main .container .author {
+    font-size: 18px;
+    font-weight: 200;
+    font-style: italic;
+    margin-bottom: 20px;
+    display: flex;
+    margin-top: 10px;
+    justify-content: flex-end;
+}
+.main .container .author .quote-author{
+    font-style: italic;
+    font-weight: 600;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    border-top: 1px solid #000;
+}
+
+.btns .use-btns .refresh-btn {
+    font-size: 18px;
+    background-color: #377dff;
+    border: none;
+    color: white;
+    padding: 12px 17px;
+    border-radius: 9999px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Times New Roman", Times, serif;
+    transition: 0.2s linear;
+}
+
+.refresh-btn:hover {
+    transform: scale(1.05);
+}
+
+.btns .send-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px;
+}
+
+.btns .send-btn .btn {
+    font-size: 18px;
+    background: transparent;
+    color: #377dff;
+    padding: 12px;
+    border: 1px solid #377dff;
+    border-radius: 9999px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+    margin-left: 3px;
+}
+
+.btns .send-btn .btn:hover {
+    background-color: #377dff;
+    color: #fff;
+}
+
+footer p a {
+    color: rgb(223, 215, 215);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+footer p a:hover {
+    color: rgb(165, 166, 167);
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        max-width: 90%;
+        min-width: 90%;
+    }
+}
